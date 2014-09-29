@@ -1,3 +1,5 @@
+var dataLocation = 'http://www.louafi.fr/kantor-data/';
+
 function getAudioPlayer(filePath) {
     var htmlCode = "<object type=\"application/x-shockwave-flash\" data=\"dewplayer.swf\" width=\"200\" height=\"20\" id=\"dewplayer\" name=\"dewplayer\"><param name=\"movie\" value=\"dewplayer.swf\" /><param name=\"flashvars\" value=\"mp3=[mp3FilePath]\" /><param name=\"wmode\" value=\"transparent\" /></object>";
 
@@ -69,7 +71,7 @@ function displayVoices(work) {
             voice = voices[i];
 
             var voiceType = voice["voiceType"];
-            var audioFilePath = "music/" + work["directoryPath"] + "/" + voice["audioFile"];
+            var audioFilePath = dataLocation + work["directoryPath"] + "/" + voice["audioFile"];
 
             var htmlVoice = "<div class=\"voice\"><p>[voiceType]</p><div>[audioPlayer]</div><p class=\"audioFile\"><a href=\"[audioFile]\">Fichier MP3 pour [voiceTypeLowerCase]</a></p></div>";
 
@@ -101,7 +103,7 @@ function displayScore(work) {
     for (var i = 0; i < imageFiles.length; i++) {
         imageFile = imageFiles[i];
 
-        imageFilePath = "music/" + work["directoryPath"] + "/" + imageFile;
+        imageFilePath = dataLocation + work["directoryPath"] + "/" + imageFile;
 
         html = "<img src=\"[imageFile]\" alt=\"[title]\" width=\"800\" />";
         html = html.replace("[imageFile]", imageFilePath).replace("[title]", work["title"]);
@@ -110,7 +112,7 @@ function displayScore(work) {
     }
 
     htmlFiles = "<div class=\"pdfFile\"><a href=\"[pdfFile]\">Fichier PDF</a></div>";//<div class=\"museScoreFile\"><a href=\"[museScoreFile]\">Fichier MuseScore</a></div>";
-    htmlFiles = htmlFiles.replace("[pdfFile]", "music/" + work["directoryPath"] + "/" + work["score"]["pdfFile"]);
+    htmlFiles = htmlFiles.replace("[pdfFile]", dataLocation + work["directoryPath"] + "/" + work["score"]["pdfFile"]);
     //.replace("[museScoreFile]", "music/" + work["directoryPath"] + "/" + work["score"]["museScoreFile"]);
     $(".work .score .files").html(htmlFiles);
 
