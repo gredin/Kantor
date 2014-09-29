@@ -1197,8 +1197,8 @@ var works = {
     },
     "22": {
         "composer": "12",
-        "title": "Hay triste que vengo",
-        "directoryPath": "del-encina/hay-triste-que-vengo",
+        "title": "Ay triste que vengo",
+        "directoryPath": "del-encina/ay-triste-que-vengo",
         "score": {
             "pdfFile": "Ay triste que vengo.pdf",
             "museScoreFile": "",
