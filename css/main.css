@@ -1,0 +1,107 @@
+/**
+ * General style
+ */
+
+body {
+    background-color: #333333;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.15em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 2.5em 0;
+}
+
+a {
+    color: #9ccaff;
+    font-weight: bold;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/**
+ * Summary
+ */
+
+.summary .composer {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3em;
+}
+
+.summary .composer ul {
+    list-style: none inside;
+    padding-left: 0;
+}
+
+/**
+ * Lyrics
+ */
+
+.lyrics .original, .lyrics .translation {
+    display: inline-block;
+    margin-right: 4em;
+    vertical-align: top;
+}
+
+/**
+ * Voices
+ */
+
+.voices .voice {
+    display: inline-block;
+    width: 210px;
+    margin: 0 5px;
+    vertical-align: top;
+}
+
+.voices .audioFile {
+    padding-left: 40px;
+    background: url("img/icons/audio.png") no-repeat left center;
+    height: 32px;
+    line-height: 32px;
+}
+
+/**
+ * Score
+ */
+
+.score .files {
+    margin: 2em 0;
+}
+
+.score .pdfFile, .score .museScoreFile {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 2em;
+    padding-left: 40px;
+}
+
+.score .pdfFile {
+    background: url("img/icons/pdf.png") no-repeat left center;
+}
+
+.score .museScoreFile {
+    background: url("img/icons/muse_score.png") no-repeat left center;
+}
