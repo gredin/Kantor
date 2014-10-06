@@ -87,7 +87,7 @@ a {
 
 .voices .audioFile {
     padding-left: 40px;
-    background: url("img/icons/audio.png") no-repeat left center;
+    background: url("../img/icons/audio.png") no-repeat left center;
     height: 32px;
     line-height: 32px;
 }
@@ -109,9 +109,9 @@ a {
 }
 
 .score .pdfFile {
-    background: url("img/icons/pdf.png") no-repeat left center;
+    background: url("../img/icons/pdf.png") no-repeat left center;
 }
 
 .score .museScoreFile {
-    background: url("img/icons/muse_score.png") no-repeat left center;
+    background: url("../img/icons/muse_score.png") no-repeat left center;
 }
