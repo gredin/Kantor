@@ -50,6 +50,10 @@ var composers = {
     "13": {
         "name": "Janequin, Clément",
         "works": ["25"]
+    },
+    "14": {
+        "name": "Brahms, Johannes",
+        "works": ["26"]
     }
 }
 
@@ -1333,6 +1337,43 @@ var works = {
         "lyrics": {
             "author": "",
             "lang": "es",
+            "lines": [
+            ],
+            "translation": [
+            ]
+        },
+        "recordings": []
+    },
+    "26": {
+        "composer": "14",
+        "title": "Der tote Knabe",
+        "directoryPath": "brahms/der-tote-knabe",
+        "score": {
+            "pdfFile": "Der tote Knabe.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Der tote Knabe.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Der tote Knabe (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Der tote Knabe (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Der tote Knabe (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Der tote Knabe (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "",
+            "lang": "de",
             "lines": [
             ],
             "translation": [
