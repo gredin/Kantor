@@ -7,9 +7,9 @@ function getAudioPlayer(filePath) {
 }
 
 function displayLyrics(work) {
-    htmlOriginalLyrics = "";
-    originalLyrics = work["lyrics"]["lines"];
-    countLines = originalLyrics.length;
+    var htmlOriginalLyrics = "";
+    var originalLyrics = work["lyrics"]["lines"];
+    var countLines = originalLyrics.length;
 
     if (countLines > 0) {
         htmlOriginalLyrics = "<p>";
@@ -19,7 +19,11 @@ function displayLyrics(work) {
             if (line.length == 0) {
                 htmlOriginalLyrics += "</p><p>";
             } else {
-                htmlOriginalLyrics += line;
+                if (work['lyrics']['lang'] !== 'fr') {
+                    htmlOriginalLyrics += '<span class="oi textToSpeech" data-glyph="bullhorn" title="Ecouter la prononciation" aria-hidden="true"></span>';
+                };
+
+                htmlOriginalLyrics += '<span class="text">' + line + '</span>';
 
                 if (i < originalLyrics.length - 1) {
                     htmlOriginalLyrics += "<br />";
@@ -32,9 +36,9 @@ function displayLyrics(work) {
 
     $(".work .lyrics .original").html(htmlOriginalLyrics);
 
-    htmlTranslation = "";
-    translation = work["lyrics"]["translation"];
-    countLines = translation.length;
+    var htmlTranslation = "";
+    var translation = work["lyrics"]["translation"];
+    var countLines = translation.length;
 
     if (countLines > 0) {
         htmlTranslation = "<p>";
@@ -56,13 +60,19 @@ function displayLyrics(work) {
     }
 
     $(".work .lyrics .translation").html(htmlTranslation);
+
+    $('.textToSpeech').click(function () {
+        var textToSpeechUrl = 'https://translate.google.fr/translate_tts?ie=UTF-8&tl=' + work['lyrics']['lang'] + '&q=' + encodeURIComponent($(this).next().html());
+        var audio = new Audio(textToSpeechUrl);
+        audio.play();
+    });
 }
 
 function displayVoices(work) {
     var htmlVoices = "";
 
-    voices = work["voices"];
-    countVoices = voices.length;
+    var voices = work["voices"];
+    var countVoices = voices.length;
 
     if (countVoices > 0) {
         htmlVoices = "<h2>Voix</h2>";
@@ -88,7 +98,7 @@ function displayVoices(work) {
 }
 
 function displayInfo(work) {
-    html = "<h1>[title]</h1>";
+    var html = "<h1>[title]</h1>";
 
     html = html.replace("[title]", work["title"]);
 
@@ -96,9 +106,9 @@ function displayInfo(work) {
 }
 
 function displayScore(work) {
-    htmlAll = "";
+    var htmlAll = "";
 
-    imageFiles = work["score"]["imageFiles"];
+    var imageFiles = work["score"]["imageFiles"];
 
     for (var i = 0; i < imageFiles.length; i++) {
         imageFile = imageFiles[i];
@@ -122,8 +132,8 @@ function displayScore(work) {
 function displayRecordings(work) {
     var htmlRecordings = "";
 
-    recordings = work["recordings"];
-    countRecordings = recordings.length;
+    var recordings = work["recordings"];
+    var countRecordings = recordings.length;
 
     if (countRecordings > 0) {
         htmlRecordings = "<h2>Interprétations</h2>";
@@ -143,7 +153,7 @@ function displayRecordings(work) {
 }
 
 function displayWork(works, workId) {
-    work = works[workId];
+    var work = works[workId];
 
     $(".work").hide();
 

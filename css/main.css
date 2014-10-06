@@ -62,6 +62,16 @@ a {
     display: inline-block;
     margin-right: 4em;
     vertical-align: top;
+    line-height: 1.7em;
+}
+
+.textToSpeech {
+    padding-right: 0.7em;
+    cursor: pointer;
+}
+
+.textToSpeech:hover {
+    color: #ffc473;
 }
 
 /**
