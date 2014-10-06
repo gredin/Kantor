@@ -1375,6 +1375,8 @@ var works = {
             "author": "",
             "lang": "de",
             "lines": [
+                "(Der tote Knabe)",
+                "",
                 "Es pochet ein Knabe sachte",
                 "an Feinsliebchens Fensterlein:",
                 "Feinslieb, sag bist du darinnnen?",
@@ -1401,6 +1403,32 @@ var works = {
                 "mit mir in den Himmel hinauf."
             ],
             "translation": [
+                "(Le garçon mort)",
+                "",
+                "Un garçon frappe doucement",
+                "A la fenêtre de sa bien-aimée :",
+                "« Dis-moi, bien-aimée, es-tu là ?",
+                "Lève-toi et laisse-moi entrer !",
+                "",
+                "- Je peux parler avec toi,",
+                "Mais pas te laisser entrer.",
+                "Je suis promise à quelqu'un,",
+                "Et je n'en veux pas d'autre !",
+                "",
+                "- Celui à qui tu es promise,",
+                "Cher amour, c'est moi.",
+                "Donne-moi ta petite main blanche,",
+                "Peut-être me reconnaîtras-tu.",
+                "",
+                "- Tu sens la terre,",
+                "Dis-moi, chéri, es-tu mort ?",
+                "- Ne devrais-je pas sentir la terre",
+                "Puisque je suis dans la tombe ?",
+                "",
+                "- Réveille ton père et ta mère,",
+                "Réveille tous tes amis.",
+                "Tu porteras une couronne verte",
+                "Pour monter au ciel avec moi. »"
             ]
         },
         "recordings": []
