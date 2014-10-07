@@ -62,8 +62,10 @@ function displayLyrics(work) {
     $(".work .lyrics .translation").html(htmlTranslation);
 
     $('.textToSpeech').click(function () {
-        var textToSpeechUrl = 'https://translate.google.fr/translate_tts?ie=UTF-8&tl=' + work['lyrics']['lang'] + '&q=' + encodeURIComponent($(this).next().html());
-        var audio = new Audio(textToSpeechUrl);
+        var textToSpeechUrl = 'http://translate.google.fr/translate_tts?ie=UTF-8&tl=' + work['lyrics']['lang'] + '&q=' + encodeURIComponent($(this).next().html());
+        var noRefererUrl    = 'http://no-ref.appspot.com/' + encodeURIComponent(textToSpeechUrl);
+
+        var audio = new Audio(noRefererUrl);
         audio.play();
     });
 }
