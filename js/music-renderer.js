@@ -19,9 +19,12 @@ function displayLyrics(work) {
             if (line.length == 0) {
                 htmlOriginalLyrics += "</p><p>";
             } else {
+                /*
+                // DEACTIVATED BECAUSE OF REFERER PROBLEM
                 if (work['lyrics']['lang'] !== 'fr') {
                     htmlOriginalLyrics += '<span class="oi textToSpeech" data-glyph="bullhorn" title="Ecouter la prononciation" aria-hidden="true"></span>';
                 };
+                */
 
                 htmlOriginalLyrics += '<span class="text">' + line + '</span>';
 
@@ -61,6 +64,8 @@ function displayLyrics(work) {
 
     $(".work .lyrics .translation").html(htmlTranslation);
 
+    /*
+    // DEACTIVATED BECAUSE OF REFERER PROBLEM
     $('.textToSpeech').click(function () {
         var textToSpeechUrl = 'http://translate.google.fr/translate_tts?ie=UTF-8&tl=' + work['lyrics']['lang'] + '&q=' + encodeURIComponent($(this).next().html());
         var noRefererUrl    = 'http://no-ref.appspot.com/' + encodeURIComponent(textToSpeechUrl);
@@ -68,6 +73,7 @@ function displayLyrics(work) {
         var audio = new Audio(noRefererUrl);
         audio.play();
     });
+    */
 }
 
 function displayVoices(work) {
