@@ -41,7 +41,7 @@ var composers = {
     },
     "11": {
         "name": "Bach, Johann Sebastian",
-        "works": ["20"]
+        "works": ["20", "27"]
     },
     "12": {
         "name": "Encina, Juan del",
@@ -1429,6 +1429,54 @@ var works = {
                 "Réveille tous tes amis.",
                 "Tu porteras une couronne verte",
                 "Pour monter au ciel avec moi. »"
+            ]
+        },
+        "recordings": []
+    },
+    "27": {
+        "composer": "11",
+        "title": "Jesu, meine Freude",
+        "directoryPath": "bach/jesu-meine-freude",
+        "score": {
+            "pdfFile": "Bach - Jesu, meine Freude.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Bach - Jesu, meine Freude.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Bach - Jesu, meine Freude (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Bach - Jesu, meine Freude (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Bach - Jesu, meine Freude (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Bach - Jesu, meine Freude (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "",
+            "lang": "de",
+            "lines": [
+                "Jesu, meine Freude,",
+                "Meines Herzens Weide,",
+                "Jesu, meine Zier,",
+                "",
+                "Ach wie lang, ach lange",
+                "Ist dem Herzen bange",
+                "Und verlangt nach dir!",
+                "",
+                "Gottes Lamm, mein Bräutigam,",
+                "Außer dir soll mir auf Erden",
+                "Nichts sonst Liebers werden."
+            ],
+            "translation": [
             ]
         },
         "recordings": []
