@@ -9,7 +9,7 @@ var composers = {
     },
     "3": {
         "name": "Mozart, Wolgang Amadeus",
-        "works": ["3", "7", "12", "21", "23"]
+        "works": ["3", "7", "12", "21", "23", "29"]
     },
     "4": {
         "name": "Traditionnel",
@@ -53,7 +53,7 @@ var composers = {
     },
     "14": {
         "name": "Brahms, Johannes",
-        "works": ["26"]
+        "works": ["26", "28"]
     }
 }
 
@@ -1480,5 +1480,114 @@ var works = {
             ]
         },
         "recordings": []
+    },
+    "28": {
+        "composer": "14",
+        "title": "Die Wollust in den Maien",
+        "directoryPath": "brahms/die-wollust-in-den-maien",
+        "score": {
+            "pdfFile": "Die Wollust in den Maien.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Die Wollust in den Maien.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Die Wollust in den Maien (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Die Wollust in den Maien (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Die Wollust in den Maien (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Die Wollust in den Maien (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "",
+            "lang": "de",
+            "lines": [
+                "Die Wollust in den Maien",
+                "Die Zeit hat Freuden bracht,",
+                "Ddie Blümlein mancherleien,",
+                "Ein jeglichs nach sein'r G'stalt,",
+                "Das sind die roten Röselein,",
+                "Der Feyl, der grüne Klee,",
+                "Von herzer Liebe scheiden",
+                "Das tut weh.",
+                "",
+                "Der Vögelein Gesange",
+                "Die Zeit hat Freuden bracht,",
+                "Ihr Lieb tät mich bezwingen,",
+                "Freundlich sie zu mir sprach:",
+                "Sollt, schönes Lieb, ich fragen dich,",
+                "Wollst fein berichten mich.",
+                "Genad mir, schöne Frauen,",
+                "So sprach ich.",
+                "",
+                "Nach manchem Seufzer schwere",
+                "Komm ich wohl wieder dar,",
+                "Nach Jammer und nach Leide",
+                "Seh ich dein Äuglein klar.",
+                "Ich bitt dich, Auserwählte mein,",
+                "Laß dir befohlen sein",
+                "Das treue, junge Herze mein,",
+                "Das Herze mein."
+            ],
+            "translation": []
+        },
+        "recordings": []
+    },
+    "29": {
+        "composer": "3",
+        "title": "Lacrimosa",
+        "directoryPath": "mozart/lacrimosa",
+        "score": {
+            "pdfFile": "Lacrimosa.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Lacrimosa - 1.png", "Lacrimosa - 2.png", "Lacrimosa - 3.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Lacrimosa (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Lacrimosa (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Lacrimosa (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Lacrimosa (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "Anonyme",
+            "lang": "la",
+            "lines": [
+                "Lacrimosa dies illa,",
+                "Qua resurget ex favilla",
+                "Judicandus homo reus:",
+                "Huic ergo parce Deus.",
+                "",
+                "Pie Jesu Domine,",
+                "Dona eis requiem.",
+                "",
+                "Amen."
+            ],
+            "translation": [
+            ]
+        },
+        "recordings": [
+        ]
     }
 }
