@@ -54,6 +54,10 @@ var composers = {
     "14": {
         "name": "Brahms, Johannes",
         "works": ["26", "28"]
+    },
+    "15": {
+        "name": "Nunes Garcia, José Maurício",
+        "works": ["30"]
     }
 }
 
@@ -1585,6 +1589,52 @@ var works = {
                 "Amen."
             ],
             "translation": [
+            ]
+        },
+        "recordings": [
+        ]
+    },
+    "30": {
+        "composer": "15",
+        "title": "Domini, tu mihi lavas pedes",
+        "directoryPath": "nunes-garcia/domini-tu-mihi-lavas-pedes",
+        "score": {
+            "pdfFile": "Domini, tu mihi lavas pedes.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Domini, tu mihi lavas pedes - 1.png", "Domini, tu mihi lavas pedes - 2.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Domini tu mihi lavas pedes (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Domini tu mihi lavas pedes (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Domini tu mihi lavas pedes (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Domini tu mihi lavas pedes (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "Anonyme",
+            "lang": "la",
+            "lines": [
+                "Domine, tu mihi lavas pedes ?",
+                "Respondit Iesus et dixit ei :",
+                "Si non lavero tibi pedes,",
+                "Non habetis partem mecum."
+            ],
+            "translation": [
+                "C'est toi, Seigneur, qui me laves les pieds ?",
+                "Jésus répondit et lui dit :",
+                "Si je ne te lave pas les pieds,",
+                "Tu n'auras pas de part avec moi."
             ]
         },
         "recordings": [
