@@ -33,7 +33,7 @@ var composers = {
     },
     "9": {
         "name": "Fauré, Gabriel",
-        "works": ["16"]
+        "works": ["16", "31"]
     },
     "10": {
         "name": "Certon, Pierre",
@@ -1639,5 +1639,61 @@ var works = {
         },
         "recordings": [
         ]
+    },
+    "31": {
+        "composer": "9",
+        "title": "Madrigal",
+        "directoryPath": "faure/madrigal",
+        "score": {
+            "pdfFile": "Madrigal.pdf",
+            "museScoreFile": "",
+            "imageFiles": ["Madrigal-page1.png", "Madrigal-page2.png", "Madrigal-page3.png", "Madrigal-page4.png", "Madrigal-page5.png", "Madrigal-page6.png"]
+        },
+        "voices": [
+            {
+                "voiceType": "Soprano",
+                "audioFile": "Madrigal (1).mp3"
+            },
+            {
+                "voiceType": "Alto",
+                "audioFile": "Madrigal (2).mp3"
+            },
+            {
+                "voiceType": "Ténor",
+                "audioFile": "Madrigal (3).mp3"
+            },
+            {
+                "voiceType": "Basse",
+                "audioFile": "Madrigal (4).mp3"
+            }
+        ],
+        "lyrics": {
+            "author": "Armand Silvestre",
+            "lang": "fr",
+            "lines": [
+                "Inhumaines qui, sans merci,",
+                "Vous raillez de notre souci,",
+                "Aimez ! Aimez quand on vous aime !",
+                "",
+                "Ingrats qui ne vous doutez pas",
+                "Des rêves éclos sur vos pas,",
+                "Aimez ! Aimez quand on vous aime !",
+                "",
+                "Sachez, ô cruelles Beautés,",
+                "Que les jours d'aimer sont comptés.",
+                "Aimez ! aimez quand on vous aime !",
+                "",
+                "Sachez, amoureux inconstants,",
+                "Que le bien d'aimer n'a qu'un temps.",
+                "Aimez ! aimez quand on vous aime !",
+                "",
+                "Un même destin nous poursuit",
+                "Et notre folie est la même :",
+                "C'est celle d'aimer qui nous fuit,",
+                "C'est celle de fuir qui nous aime !"
+            ],
+            "translation": []
+        },
+        "recordings": []
     }
 }
